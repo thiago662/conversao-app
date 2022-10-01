@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="@string/app_fahrenheit_title"
+        android:background="@color/yellow_500"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/app_celsius_label"
+        android:textAlignment="viewEnd"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/editNumberCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/textViewC"
+        app:layout_constraintStart_toEndOf="@+id/textViewCelsius"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewC"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/app_celsius_symbol"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_fahrenheit_label"
+        android:textAlignment="viewEnd"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCelsius" />
+
+    <TextView
+        android:id="@+id/textViewResultFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewF"
+        app:layout_constraintStart_toEndOf="@+id/textViewFahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberCelsius" />
+
+    <TextView
+        android:id="@+id/textViewF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_fahrenheit_symbol"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <Button
+        android:id="@+id/buttonConvertCelsiusToFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_convert_to_fahrenheit_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultFahrenheit" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_clear_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConvertCelsiusToFahrenheit" />
+
+    <Button
+        android:id="@+id/buttonChangeToCelsiusConversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_move_to_celsius_label"
+        android:background="@color/red_500"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

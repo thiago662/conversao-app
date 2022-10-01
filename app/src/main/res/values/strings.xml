@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">conversao-app</string>
+
+    <string name="app_fahrenheit_title">Fahrenheit</string>
+    <string name="app_celsius_label">Celsius : </string>
+    <string name="app_celsius_symbol">ºC</string>
+    <string name="app_fahrenheit_label">Fahrenheit : </string>
+    <string name="app_fahrenheit_symbol">ºF</string>
+    <string name="app_convert_to_fahrenheit_label">Converter para Fahrenheit</string>
+    <string name="app_clear_label">Limpar</string>
+    <string name="app_move_to_celsius_label">Ir para conversão para celsius</string>
+    <string name="app_celsius_title">Celsius</string>
+    <string name="app_convert_to_celsius_label">Converter para Celsius</string>
+    <string name="app_move_to_fahrenheit_label">Ir para conversão para Fahrenheit</string>
+</resources>
